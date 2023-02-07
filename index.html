@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TSCA</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/f4c7987317.js" crossorigin="anonymous"></script>
+    <script src="app.js" defer></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+              
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#coaches">Coaches</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                     
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+                
+            </nav>
+            
+            <div class="header-text">
+                <h1 id="h1">Welcome to<span>TSCA</span>!</h1>
+                <p id="para">
+                    <span id="academyName">Talent Search Cricket Academy</span> <br>
+                    Here Talent Meets Opportunity</p>
+            </div>
+        </div>
+    </div>
+    
+<!----------------------------- about ------------------------------------------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Us</h1>
+                    <br>
+                    <p>Top Class Cricket Academy Producint Young & Talented Cricketers</p>
+                    <p>Welcome to our premier cricket academy, where aspiring cricketers come to take their skills to the next level. Our team of experienced coaches is dedicated to providing top-notch training and guidance to players of all ages and abilities. Our state-of-the-art facilities and innovative training programs are designed to help each player reach their full potential and achieve their goals on the field. Whether you're a beginner looking to learn the basics or an advanced player seeking to perfect your technique, our academy is the perfect place for you to grow and improve your game. Join us today and experience the difference that comes from training at a world-class cricket academy.</p>
+                    <br>
+                    <div class="about-col-1">
+                        <img src="images/Player.jpg">
+                    </div>
+                   
+                </div>
+            </div>
+        </div>
+    </div>
+    <!------------------------------------ services ------------------------------------->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">Our Services</h1>
+            <div class="services-list">
+                <div>
+                    <!-- <i class="fa-solid fa-code"></i> -->
+                    <h2>Personal Coaching</h2>
+                    <p>Personal coach will monitor players progress</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <!-- <i class="fa-solid fa-crop-simple"></i> -->
+                    <h2>Top Class Facilities</h2>
+                    <p>Learn with best Facilities & equipments</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <!-- <i class="fa-brands fa-app-store"></i> -->
+                    <h2>Best Coaches</h2>
+                    <p>Learn from best of the game</p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!------------------------------------------------- portfolio --------------------------------------------->
+    <div id="coaches">
+        <div class="container">
+            <h1 class="sub-title">Our Coaches</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/Abd1.jpg">
+                    <div class="layer">
+                        <h3>Batting Coach <br> AB Devilliers</h3>
+                        <p>A unique batter with unique skills will teach you the art of batting</p>
+                        <a href="a"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/steynGun.jpg">
+                    <div class="layer">
+                        <h3>Bowling Coach <br> Dale Steyn</h3>
+                        <p>Learn the art of swing bowling from deadliest pacer of all times</p>
+                        <a href="a"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/Jonty.jpg">
+                    <div class="layer">
+                        <h3>Feilding Coach <br> Jonty Rhodes</h3>
+                        <p>Greatest fielder of all times will help you master the art of fielding</p>
+                        <a href="a"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+    </div>
+
+    <!--------------------------------------------- contact ------------------------------------------------->
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Us</h1>
+                    <p><i class="fa fa-envelope"></i> tsca1999@gmail.com</p>
+                    <p><i class="fa-solid fa-square-phone"></i> 7620112076</p>
+                    
+                    
+                    
+                </div>
+                <div class="contact-right">
+                    <form>
+                        <input type="text" name="name" placeholder="Your Name" required>
+                        <input type="number" name="age" placeholder="Your Age" required>
+                        <input type="text" name="adress" placeholder="Your Address" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright <i class="fa fa-copyright"></i> tsca.com</p>
+        </div>
+    </div>
+
+    <script>
+
+var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        function opentab (tabname){
+            for (tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+        
+
+    </script>
+
+    <script>
+
+       var sidemenu = document.getElementById("sidemenu");
+
+       function openmenu() {
+        sidemenu.style.right = "0";
+       }
+       function closemenu() {
+        sidemenu.style.right = "-200px";
+       }
+
+    </script>
+    
+</body>
+</html>
+
+
+
